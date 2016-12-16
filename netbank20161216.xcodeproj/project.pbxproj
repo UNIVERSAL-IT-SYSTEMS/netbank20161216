@@ -1,0 +1,323 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2178B0B11E043716003E970E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2178B0B01E043716003E970E /* AppDelegate.swift */; };
+		2178B0B31E043716003E970E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2178B0B21E043716003E970E /* ViewController.swift */; };
+		2178B0B61E043716003E970E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2178B0B41E043716003E970E /* Main.storyboard */; };
+		2178B0B91E043716003E970E /* netbank20161216.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2178B0B71E043716003E970E /* netbank20161216.xcdatamodeld */; };
+		2178B0BB1E043716003E970E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2178B0BA1E043716003E970E /* Assets.xcassets */; };
+		2178B0BE1E043716003E970E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2178B0BC1E043716003E970E /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2178B0AD1E043716003E970E /* netbank20161216.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = netbank20161216.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2178B0B01E043716003E970E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2178B0B21E043716003E970E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2178B0B51E043716003E970E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2178B0B81E043716003E970E /* netbank20161216.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = netbank20161216.xcdatamodel; sourceTree = "<group>"; };
+		2178B0BA1E043716003E970E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2178B0BD1E043716003E970E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2178B0BF1E043716003E970E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2178B0AA1E043716003E970E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2178B0A41E043716003E970E = {
+			isa = PBXGroup;
+			children = (
+				2178B0AF1E043716003E970E /* netbank20161216 */,
+				2178B0AE1E043716003E970E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2178B0AE1E043716003E970E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2178B0AD1E043716003E970E /* netbank20161216.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2178B0AF1E043716003E970E /* netbank20161216 */ = {
+			isa = PBXGroup;
+			children = (
+				2178B0B01E043716003E970E /* AppDelegate.swift */,
+				2178B0B21E043716003E970E /* ViewController.swift */,
+				2178B0B41E043716003E970E /* Main.storyboard */,
+				2178B0BA1E043716003E970E /* Assets.xcassets */,
+				2178B0BC1E043716003E970E /* LaunchScreen.storyboard */,
+				2178B0BF1E043716003E970E /* Info.plist */,
+				2178B0B71E043716003E970E /* netbank20161216.xcdatamodeld */,
+			);
+			path = netbank20161216;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2178B0AC1E043716003E970E /* netbank20161216 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2178B0C21E043716003E970E /* Build configuration list for PBXNativeTarget "netbank20161216" */;
+			buildPhases = (
+				2178B0A91E043716003E970E /* Sources */,
+				2178B0AA1E043716003E970E /* Frameworks */,
+				2178B0AB1E043716003E970E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = netbank20161216;
+			productName = netbank20161216;
+			productReference = 2178B0AD1E043716003E970E /* netbank20161216.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2178B0A51E043716003E970E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Nagy, Valter";
+				TargetAttributes = {
+					2178B0AC1E043716003E970E = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 2178B0A81E043716003E970E /* Build configuration list for PBXProject "netbank20161216" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2178B0A41E043716003E970E;
+			productRefGroup = 2178B0AE1E043716003E970E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2178B0AC1E043716003E970E /* netbank20161216 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2178B0AB1E043716003E970E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2178B0BE1E043716003E970E /* LaunchScreen.storyboard in Resources */,
+				2178B0BB1E043716003E970E /* Assets.xcassets in Resources */,
+				2178B0B61E043716003E970E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2178B0A91E043716003E970E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2178B0B31E043716003E970E /* ViewController.swift in Sources */,
+				2178B0B91E043716003E970E /* netbank20161216.xcdatamodeld in Sources */,
+				2178B0B11E043716003E970E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2178B0B41E043716003E970E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2178B0B51E043716003E970E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2178B0BC1E043716003E970E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2178B0BD1E043716003E970E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2178B0C01E043716003E970E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2178B0C11E043716003E970E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2178B0C31E043716003E970E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = netbank20161216/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.netbank20161216;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		2178B0C41E043716003E970E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = netbank20161216/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.netbank20161216;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2178B0A81E043716003E970E /* Build configuration list for PBXProject "netbank20161216" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2178B0C01E043716003E970E /* Debug */,
+				2178B0C11E043716003E970E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2178B0C21E043716003E970E /* Build configuration list for PBXNativeTarget "netbank20161216" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2178B0C31E043716003E970E /* Debug */,
+				2178B0C41E043716003E970E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2178B0B71E043716003E970E /* netbank20161216.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2178B0B81E043716003E970E /* netbank20161216.xcdatamodel */,
+			);
+			currentVersion = 2178B0B81E043716003E970E /* netbank20161216.xcdatamodel */;
+			path = netbank20161216.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2178B0A51E043716003E970E /* Project object */;
+}
