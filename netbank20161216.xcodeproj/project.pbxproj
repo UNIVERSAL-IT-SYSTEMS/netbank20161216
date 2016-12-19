@@ -7,23 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2158586D1E07D2690022CA93 /* Story - 1.md in Sources */ = {isa = PBXBuildFile; fileRef = 2158586C1E07D2690022CA93 /* Story - 1.md */; };
+		215858701E07DE930022CA93 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2158586F1E07DE930022CA93 /* RegisterViewController.swift */; };
 		2178B0B11E043716003E970E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2178B0B01E043716003E970E /* AppDelegate.swift */; };
-		2178B0B31E043716003E970E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2178B0B21E043716003E970E /* ViewController.swift */; };
+		2178B0B31E043716003E970E /* FirstOpenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2178B0B21E043716003E970E /* FirstOpenViewController.swift */; };
 		2178B0B61E043716003E970E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2178B0B41E043716003E970E /* Main.storyboard */; };
 		2178B0B91E043716003E970E /* netbank20161216.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2178B0B71E043716003E970E /* netbank20161216.xcdatamodeld */; };
 		2178B0BB1E043716003E970E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2178B0BA1E043716003E970E /* Assets.xcassets */; };
 		2178B0BE1E043716003E970E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2178B0BC1E043716003E970E /* LaunchScreen.storyboard */; };
+		2178B0C81E043779003E970E /* hatter.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2178B0C71E043779003E970E /* hatter.jpg */; };
+		2178B0CC1E043E76003E970E /* BackgroundExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2178B0CB1E043E76003E970E /* BackgroundExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2158586C1E07D2690022CA93 /* Story - 1.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "Story - 1.md"; sourceTree = "<group>"; };
+		2158586F1E07DE930022CA93 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		2178B0AD1E043716003E970E /* netbank20161216.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = netbank20161216.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2178B0B01E043716003E970E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2178B0B21E043716003E970E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2178B0B21E043716003E970E /* FirstOpenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstOpenViewController.swift; sourceTree = "<group>"; };
 		2178B0B51E043716003E970E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2178B0B81E043716003E970E /* netbank20161216.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = netbank20161216.xcdatamodel; sourceTree = "<group>"; };
 		2178B0BA1E043716003E970E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2178B0BD1E043716003E970E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2178B0BF1E043716003E970E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2178B0C71E043779003E970E /* hatter.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = hatter.jpg; path = ../../hatter.jpg; sourceTree = "<group>"; };
+		2178B0CB1E043E76003E970E /* BackgroundExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +45,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2158586E1E07DE4F0022CA93 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2178B0B21E043716003E970E /* FirstOpenViewController.swift */,
+				2158586F1E07DE930022CA93 /* RegisterViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
 		2178B0A41E043716003E970E = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +73,16 @@
 		2178B0AF1E043716003E970E /* netbank20161216 */ = {
 			isa = PBXGroup;
 			children = (
-				2178B0B01E043716003E970E /* AppDelegate.swift */,
-				2178B0B21E043716003E970E /* ViewController.swift */,
+				2158586E1E07DE4F0022CA93 /* ViewControllers */,
 				2178B0B41E043716003E970E /* Main.storyboard */,
+				2178B0B01E043716003E970E /* AppDelegate.swift */,
+				2178B0CB1E043E76003E970E /* BackgroundExtension.swift */,
 				2178B0BA1E043716003E970E /* Assets.xcassets */,
+				2178B0C71E043779003E970E /* hatter.jpg */,
 				2178B0BC1E043716003E970E /* LaunchScreen.storyboard */,
 				2178B0BF1E043716003E970E /* Info.plist */,
 				2178B0B71E043716003E970E /* netbank20161216.xcdatamodeld */,
+				2158586C1E07D2690022CA93 /* Story - 1.md */,
 			);
 			path = netbank20161216;
 			sourceTree = "<group>";
@@ -127,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2178B0BE1E043716003E970E /* LaunchScreen.storyboard in Resources */,
+				2178B0C81E043779003E970E /* hatter.jpg in Resources */,
 				2178B0BB1E043716003E970E /* Assets.xcassets in Resources */,
 				2178B0B61E043716003E970E /* Main.storyboard in Resources */,
 			);
@@ -139,9 +160,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2178B0B31E043716003E970E /* ViewController.swift in Sources */,
+				2158586D1E07D2690022CA93 /* Story - 1.md in Sources */,
+				2178B0B31E043716003E970E /* FirstOpenViewController.swift in Sources */,
 				2178B0B91E043716003E970E /* netbank20161216.xcdatamodeld in Sources */,
+				215858701E07DE930022CA93 /* RegisterViewController.swift in Sources */,
 				2178B0B11E043716003E970E /* AppDelegate.swift in Sources */,
+				2178B0CC1E043E76003E970E /* BackgroundExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +327,7 @@
 				2178B0C41E043716003E970E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
