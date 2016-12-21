@@ -25,6 +25,8 @@ class RegisterViewController: UIViewController {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         return appDelegate.persistentContainer.viewContext
     }
+
+    
     
     
     override func viewDidLoad() {
@@ -44,15 +46,14 @@ class RegisterViewController: UIViewController {
         
         //checking data
         if (UsernameTextField.text == "" || FullnameTextField.text == "" || EmailTextField.text == "" || Password1TextField.text == "" || Password2TextField.text == ""){
-            print ("Minden adatot ki kell tölteni!")
-            let alert = UIAlertController(title: "Hiba", message: "Minden adatot ki kell tölteni!", preferredStyle: UIAlertControllerStyle.alert)
+            let alert = UIAlertController(title: "Error", message: "All fields must be fiiled!", preferredStyle: UIAlertControllerStyle.alert)
             alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
             self.present(alert, animated: true, completion: nil)
             return
         }
         
         if (Password1TextField.text != Password2TextField.text){
-            let alert = UIAlertController(title: "Hiba", message: "A két jelszónak meg kell egyeznie!", preferredStyle: UIAlertControllerStyle.alert)
+            let alert = UIAlertController(title: "Error", message: "The passwords must be identical!", preferredStyle: UIAlertControllerStyle.alert)
             alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
             self.present(alert, animated: true, completion: nil)
             Password1TextField.text = "";
@@ -65,7 +66,7 @@ class RegisterViewController: UIViewController {
         
         let context = getContext()
         
-        //retrieve the entity that we just created
+        //retrieve the entity just created
         let entity =  NSEntityDescription.entity(forEntityName: "Users", in: context)
         
         let transc = NSManagedObject(entity: entity!, insertInto: context)
@@ -76,6 +77,7 @@ class RegisterViewController: UIViewController {
         transc.setValue(EmailTextField.text, forKey: "email")
         transc.setValue(FullnameTextField.text, forKey: "fullname")
         
+        
         //save the object
         do {
             try context.save()
@@ -85,6 +87,46 @@ class RegisterViewController: UIViewController {
         } catch {
             
         }
+    
+        
+        //Print all saved data to console
+        
+        do{
+            let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Users")
+            let results = try context.fetch(request)
+
+            if results.count > 0 {
+                for items in results as! [NSManagedObject]{
+                    let uname = items.value (forKey: "username")
+                    let fname = items.value (forKey: "fullname")
+                    let email = items.value (forKey: "email")
+                    let pass = items.value (forKey: "password")
+
+                   print(uname!, fname!, email!, pass!)
+               }
+            }
+        }catch{
+            print("Error...")
+        }
+        
+
+        //Delete all contents
+        
+        //do{
+        //    let fetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Users")
+        //    let request = NSBatchDeleteRequest(fetchRequest: fetch)
+        //    _ = try getContext().execute(request)
+            //elozosor.. let result = try getContext().execute(request)
+        //}catch{}
+        
+        
+        
+        
+        let vc = WelcomeViewController( nibName: "WelcomeViewController", bundle: nil)
+        navigationController?.pushViewController(vc, animated: true)
+        
+        
+        
     
     }
 }

@@ -17,6 +17,8 @@
 		2178B0BE1E043716003E970E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2178B0BC1E043716003E970E /* LaunchScreen.storyboard */; };
 		2178B0C81E043779003E970E /* hatter.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2178B0C71E043779003E970E /* hatter.jpg */; };
 		2178B0CC1E043E76003E970E /* BackgroundExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2178B0CB1E043E76003E970E /* BackgroundExtension.swift */; };
+		218640D41E093B0800D05A91 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218640D31E093B0800D05A91 /* WelcomeViewController.swift */; };
+		218640D61E0A80B300D05A91 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218640D51E0A80B300D05A91 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		2178B0BF1E043716003E970E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2178B0C71E043779003E970E /* hatter.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = hatter.jpg; path = ../../hatter.jpg; sourceTree = "<group>"; };
 		2178B0CB1E043E76003E970E /* BackgroundExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundExtension.swift; sourceTree = "<group>"; };
+		218640D31E093B0800D05A91 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		218640D51E0A80B300D05A91 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +54,8 @@
 			children = (
 				2178B0B21E043716003E970E /* FirstOpenViewController.swift */,
 				2158586F1E07DE930022CA93 /* RegisterViewController.swift */,
+				218640D31E093B0800D05A91 /* WelcomeViewController.swift */,
+				218640D51E0A80B300D05A91 /* LoginViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -113,6 +119,9 @@
 		2178B0A51E043716003E970E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					WelcomeViewController,
+				);
 				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Nagy, Valter";
@@ -164,8 +173,10 @@
 				2178B0B31E043716003E970E /* FirstOpenViewController.swift in Sources */,
 				2178B0B91E043716003E970E /* netbank20161216.xcdatamodeld in Sources */,
 				215858701E07DE930022CA93 /* RegisterViewController.swift in Sources */,
+				218640D61E0A80B300D05A91 /* LoginViewController.swift in Sources */,
 				2178B0B11E043716003E970E /* AppDelegate.swift in Sources */,
 				2178B0CC1E043E76003E970E /* BackgroundExtension.swift in Sources */,
+				218640D41E093B0800D05A91 /* WelcomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
