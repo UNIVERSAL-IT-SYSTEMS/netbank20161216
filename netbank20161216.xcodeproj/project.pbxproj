@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		210CF6DD1E0C07DB0029180F /* Utlilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210CF6DC1E0C07DB0029180F /* Utlilities.swift */; };
 		2158586D1E07D2690022CA93 /* Story - 1.md in Sources */ = {isa = PBXBuildFile; fileRef = 2158586C1E07D2690022CA93 /* Story - 1.md */; };
 		215858701E07DE930022CA93 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2158586F1E07DE930022CA93 /* RegisterViewController.swift */; };
 		2178B0B11E043716003E970E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2178B0B01E043716003E970E /* AppDelegate.swift */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		21045E961E0AD03D00E926E7 /* CommonCryptoHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CommonCryptoHeader.h; path = ../CommonCryptoHeader.h; sourceTree = "<group>"; };
+		210CF6DC1E0C07DB0029180F /* Utlilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utlilities.swift; sourceTree = "<group>"; };
 		2158586C1E07D2690022CA93 /* Story - 1.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "Story - 1.md"; sourceTree = "<group>"; };
 		2158586F1E07DE930022CA93 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		2178B0AD1E043716003E970E /* netbank20161216.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = netbank20161216.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,16 +83,17 @@
 			isa = PBXGroup;
 			children = (
 				2158586E1E07DE4F0022CA93 /* ViewControllers */,
+				210CF6DC1E0C07DB0029180F /* Utlilities.swift */,
 				2178B0B41E043716003E970E /* Main.storyboard */,
-				2178B0B01E043716003E970E /* AppDelegate.swift */,
-				2178B0CB1E043E76003E970E /* BackgroundExtension.swift */,
-				2178B0BA1E043716003E970E /* Assets.xcassets */,
-				2178B0C71E043779003E970E /* hatter.jpg */,
-				2178B0BC1E043716003E970E /* LaunchScreen.storyboard */,
-				2178B0BF1E043716003E970E /* Info.plist */,
 				2178B0B71E043716003E970E /* netbank20161216.xcdatamodeld */,
+				2178B0C71E043779003E970E /* hatter.jpg */,
 				21045E961E0AD03D00E926E7 /* CommonCryptoHeader.h */,
 				2158586C1E07D2690022CA93 /* Story - 1.md */,
+				2178B0BF1E043716003E970E /* Info.plist */,
+				2178B0BA1E043716003E970E /* Assets.xcassets */,
+				2178B0B01E043716003E970E /* AppDelegate.swift */,
+				2178B0BC1E043716003E970E /* LaunchScreen.storyboard */,
+				2178B0CB1E043E76003E970E /* BackgroundExtension.swift */,
 			);
 			path = netbank20161216;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 				215858701E07DE930022CA93 /* RegisterViewController.swift in Sources */,
 				218640D61E0A80B300D05A91 /* LoginViewController.swift in Sources */,
 				2178B0B11E043716003E970E /* AppDelegate.swift in Sources */,
+				210CF6DD1E0C07DB0029180F /* Utlilities.swift in Sources */,
 				2178B0CC1E043E76003E970E /* BackgroundExtension.swift in Sources */,
 				218640D41E093B0800D05A91 /* WelcomeViewController.swift in Sources */,
 			);

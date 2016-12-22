@@ -10,9 +10,7 @@
 #define CommonCryptoHeader_h
 
 
-
 #import "CommonCrypto/CommonDigest.h"
-
 
 
 #endif /* CommonCryptoHeader_h */

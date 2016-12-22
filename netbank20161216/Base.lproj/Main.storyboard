@@ -22,24 +22,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7kf-6B-lpp">
-                                <rect key="frame" x="154" y="290" width="68" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7kf-6B-lpp">
+                                <rect key="frame" x="16" y="141" width="343" height="30"/>
                                 <state key="normal" title="Activation"/>
                                 <connections>
                                     <segue destination="kXp-cx-VZW" kind="show" id="7Fx-L4-I6V"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B1M-s8-wAy">
-                                <rect key="frame" x="16" y="617" width="343" height="30"/>
-                                <state key="normal" title="I already have acount"/>
-                                <connections>
-                                    <action selector="HaveAccount:" destination="BYZ-38-t0r" eventType="touchUpInside" id="djR-hH-lRV"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="It seems you have not activated the app" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rhP-1I-7oN">
-                                <rect key="frame" x="-174" y="193" width="722" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It seems you have not activated the app" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rhP-1I-7oN">
+                                <rect key="frame" x="16" y="70" width="343" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -47,9 +38,12 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="B1M-s8-wAy" secondAttribute="trailing" id="GoE-jp-76c"/>
-                            <constraint firstItem="B1M-s8-wAy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="hlS-WU-xQN"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="B1M-s8-wAy" secondAttribute="bottom" constant="20" id="tdX-u7-uPQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7kf-6B-lpp" secondAttribute="trailing" id="AyQ-aq-kJ2"/>
+                            <constraint firstItem="rhP-1I-7oN" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="CVM-oA-9fa"/>
+                            <constraint firstItem="rhP-1I-7oN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="YQR-4b-ujj"/>
+                            <constraint firstItem="7kf-6B-lpp" firstAttribute="top" secondItem="rhP-1I-7oN" secondAttribute="bottom" constant="50" id="fEI-Tc-Cba"/>
+                            <constraint firstItem="7kf-6B-lpp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="fhs-JZ-MmS"/>
+                            <constraint firstItem="rhP-1I-7oN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="okK-3Z-cmm"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -89,7 +83,7 @@
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZJE-FH-NDW">
                                 <rect key="frame" x="16" y="617" width="343" height="30"/>
-                                <state key="normal" title="Delete all my data and add new account"/>
+                                <state key="normal" title="Delete all my data"/>
                                 <connections>
                                     <action selector="DeleteDataButton:" destination="WU8-yn-c97" eventType="touchUpInside" id="CjZ-pt-TTa"/>
                                 </connections>
@@ -278,7 +272,6 @@
                                 <state key="normal" title="Activate"/>
                                 <connections>
                                     <action selector="RegisterButton:" destination="kXp-cx-VZW" eventType="touchUpInside" id="QPN-TO-wPk"/>
-                                    <segue destination="Tea-Bg-ILb" kind="show" id="Jxu-j0-cdm"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XOC-V8-cH4">
