@@ -22,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		21045E961E0AD03D00E926E7 /* CommonCryptoHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CommonCryptoHeader.h; path = ../CommonCryptoHeader.h; sourceTree = "<group>"; };
 		2158586C1E07D2690022CA93 /* Story - 1.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "Story - 1.md"; sourceTree = "<group>"; };
 		2158586F1E07DE930022CA93 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		2178B0AD1E043716003E970E /* netbank20161216.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = netbank20161216.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +89,7 @@
 				2178B0BC1E043716003E970E /* LaunchScreen.storyboard */,
 				2178B0BF1E043716003E970E /* Info.plist */,
 				2178B0B71E043716003E970E /* netbank20161216.xcdatamodeld */,
+				21045E961E0AD03D00E926E7 /* CommonCryptoHeader.h */,
 				2158586C1E07D2690022CA93 /* Story - 1.md */,
 			);
 			path = netbank20161216;
@@ -299,11 +301,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = netbank20161216/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.netbank20161216;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = CommonCryptoHeader.h;
 				SWIFT_VERSION = 3.0;
+				USER_HEADER_SEARCH_PATHS = "Pods/**";
 			};
 			name = Debug;
 		};
@@ -311,11 +316,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = netbank20161216/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.netbank20161216;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = CommonCryptoHeader.h;
 				SWIFT_VERSION = 3.0;
+				USER_HEADER_SEARCH_PATHS = "Pods/**";
 			};
 			name = Release;
 		};

@@ -52,7 +52,8 @@ class RegisterViewController: UIViewController {
             return
         }
         
-        if (Password1TextField.text != Password2TextField.text){
+        if (Password1TextField.text != Password2TextField.text)
+        {
             let alert = UIAlertController(title: "Error", message: "The passwords must be identical!", preferredStyle: UIAlertControllerStyle.alert)
             alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
             self.present(alert, animated: true, completion: nil)
@@ -60,6 +61,24 @@ class RegisterViewController: UIViewController {
             Password2TextField.text = "";
             return
         }
+        
+        
+        func sha256(string: String) -> Data? {
+            guard let messageData = string.data(using:String.Encoding.utf8) else { return nil }
+            var digestData = Data(count: Int(CC_SHA256_DIGEST_LENGTH))
+            
+            _ = digestData.withUnsafeMutableBytes {digestBytes in
+                messageData.withUnsafeBytes {messageBytes in
+                    CC_SHA256(messageBytes, CC_LONG(messageData.count), digestBytes)
+                }
+            }
+            return digestData
+        }
+        
+        
+        
+        let shaData = sha256(string:Password1TextField.text!)
+        let password = shaData!.map { String(format: "%02hhx", $0) }.joined()
         
         
         //saving data (CoreData)
@@ -73,7 +92,7 @@ class RegisterViewController: UIViewController {
         
         //set the entity values
         transc.setValue(UsernameTextField.text, forKey: "username")
-        transc.setValue(Password1TextField.text, forKey: "password")
+        transc.setValue(password, forKey: "password")
         transc.setValue(EmailTextField.text, forKey: "email")
         transc.setValue(FullnameTextField.text, forKey: "fullname")
         

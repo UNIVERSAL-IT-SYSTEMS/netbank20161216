@@ -9,6 +9,30 @@
 import UIKit
 import CoreData
 
+
+
+
+
+func sha256(string: String) -> Data? {
+    guard let messageData = string.data(using:String.Encoding.utf8) else { return nil }
+    var digestData = Data(count: Int(CC_SHA256_DIGEST_LENGTH))
+    
+    _ = digestData.withUnsafeMutableBytes {digestBytes in
+        messageData.withUnsafeBytes {messageBytes in
+            CC_SHA256(messageBytes, CC_LONG(messageData.count), digestBytes)
+        }
+    }
+    return digestData
+}
+
+
+
+
+
+
+
+
+
 class LoginViewController: UIViewController {
 
     @IBOutlet weak var PasswordTextField: UITextField!
@@ -34,6 +58,7 @@ class LoginViewController: UIViewController {
         }catch{
             print("Error...")
         }
+        
         
         
     }
@@ -65,7 +90,13 @@ class LoginViewController: UIViewController {
             
             for items in results as! [NSManagedObject]{
                 let pass = items.value (forKey: "password") as! String
-                if  pass == PasswordTextField.text {
+                
+                //print(PasswordTextField.text)
+                let shaData = sha256(string:PasswordTextField.text!)
+                let shaHex =  shaData!.map { String(format: "%02hhx", $0) }.joined()
+                print("pass in sha256: \(shaHex)")
+                
+                if  (pass == shaHex) {
                     
                     let storyboard = UIStoryboard(name: "Main", bundle: nil)
                     let viewController = storyboard.instantiateViewController(withIdentifier :"WelcomeViewController")
