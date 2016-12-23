@@ -42,13 +42,12 @@ class FirstOpenViewController: UIViewController
                     let storyboard = UIStoryboard(name: "Main", bundle: nil)
                     let view = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as UIViewController
                     let appDelegate = UIApplication.shared.delegate as! AppDelegate
-                    //show window
                     appDelegate.window?.rootViewController = view
                 }
         }
         catch
         {
-            print("Error...")
+            print("Error - FirstOpenViewController viewDidAppear")
         }
     }
 }

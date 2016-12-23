@@ -10,21 +10,6 @@ import UIKit
 import CoreData
 
 
-//ki külön fájlba
-//func sha256(string: String) -> Data?
-//{
-//    guard let messageData = string.data(using:String.Encoding.utf8) else { return nil }
-//    var digestData = Data(count: Int(CC_SHA256_DIGEST_LENGTH))
-//
-//    _ = digestData.withUnsafeMutableBytes {digestBytes in
-//        messageData.withUnsafeBytes {messageBytes in
-//            CC_SHA256(messageBytes, CC_LONG(messageData.count), digestBytes)
-//        }
-//    }
-//    return digestData
-//}
-
-
 class LoginViewController: UIViewController
 {
     @IBOutlet weak var PasswordTextField: UITextField!
@@ -52,7 +37,7 @@ class LoginViewController: UIViewController
         }
         catch
         {
-            print("Error...")
+            print("Error - LoginViewController - viewDidLoad")
         }
     }
 
@@ -98,14 +83,13 @@ class LoginViewController: UIViewController
         }
         catch
         {
-            print("Error...")
+            print("Error - LoginViewController - LoginButton")
         }
         
     }
 
     
-    @IBAction func DeleteDataButton(_ sender: Any)
-    {
+    @IBAction func DeleteDataButton(_ sender: Any) {
         //alerting user that all data gets deleted
         let alert = UIAlertController(title: "Warning", message: "All user data will be deleted. Are you sure?", preferredStyle: UIAlertControllerStyle.alert)
         alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.default, handler: nil))
@@ -123,7 +107,7 @@ class LoginViewController: UIViewController
             }
             catch
             {
-                print("Error...")
+                print("Error - LoginViewController - DeleteDataButton")
             }
         }))
         self.present(alert, animated: true, completion: nil)

@@ -34,14 +34,16 @@ class WelcomeViewController: UIViewController
         }
         catch
         {
-            print("Error...")
+            print("Error - WelcomeViewController - viewDidLoad")
         }
     }
     
-    @IBAction func RestartButton(_ sender: Any)
-    {
+    
+    
+    
+    @IBAction func LogoutButton(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let viewController = storyboard.instantiateViewController(withIdentifier :"FirstOpenViewController")
+        let viewController = storyboard.instantiateViewController(withIdentifier :"LoginViewController")
         self.present(viewController, animated: true)
     }
 }

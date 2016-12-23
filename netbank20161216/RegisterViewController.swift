@@ -10,13 +10,8 @@ import UIKit
 import CoreData
 
 
-
-
-
-
 class RegisterViewController: UIViewController
 {
-
     //Textfields
     @IBOutlet weak var UsernameTextField: UITextField!
     @IBOutlet weak var FullnameTextField: UITextField!
@@ -25,11 +20,13 @@ class RegisterViewController: UIViewController
     @IBOutlet weak var Password2TextField: UITextField!
 
     
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "hatter.jpg")!)
     }
+    
     
     
     @IBAction func RegisterButton(_ sender: UIButton)
@@ -71,6 +68,8 @@ class RegisterViewController: UIViewController
             return
         }
         
+        
+        
         //making password encrypted
         let shaData = Util.sha256(string:Password1TextField.text!)
         let password = shaData!.map { String(format: "%02hhx", $0) }.joined()
@@ -91,7 +90,7 @@ class RegisterViewController: UIViewController
         do
         {
             try context.save()
-            print("saved!")
+            print("Saved into CoreData!")
         }
         catch
             let error as NSError
@@ -99,8 +98,9 @@ class RegisterViewController: UIViewController
                 print("Could not save \(error), \(error.userInfo)")
                 }
         
+        /*
         //print all saved data to console
-//kell ez ide egyáltalán??
+        //kell ez ide egyáltalán??
         do
         {
             let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Users")
@@ -119,15 +119,14 @@ class RegisterViewController: UIViewController
         }
         catch
         {
-            print("Error...")
+            print("Error - RegisterViewController - RegisterButton")
         }
+         */
         
         //if all done, opening WelcomeViewController
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let viewController = storyboard.instantiateViewController(withIdentifier :"WelcomeViewController")
         self.present(viewController, animated: true)
-        
-
     }
 }
 

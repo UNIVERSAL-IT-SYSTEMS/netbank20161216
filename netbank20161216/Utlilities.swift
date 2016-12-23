@@ -18,12 +18,6 @@ class Util : UIViewController
     }
     
     
-    
-    
-    
-    
-    
-    
     class func sha256(string: String) -> Data?
     {
         guard let messageData = string.data(using:String.Encoding.utf8)
@@ -37,17 +31,6 @@ class Util : UIViewController
         }
         return digestData
     }
-    
-    
-    
-//ezt ki lehet egyaltlalan hozni ide?
-//    class func ViewControll(viewControl: String) //-> UIViewController
-//    {
-//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//        let viewController = storyboard.instantiateViewController(withIdentifier :"viewControl")
-//        self.present(viewController, animated: true)
-//        self.navigationController?.showViewController(viewController, sender: nil)
-//    }
     
     
 }
