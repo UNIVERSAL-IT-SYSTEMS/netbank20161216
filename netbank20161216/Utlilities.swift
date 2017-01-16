@@ -32,5 +32,33 @@ class Util : UIViewController
         return digestData
     }
     
-    
+
+
+// writing {username} label
+
+    class func scanUsername () -> String
+    {
+    var usrName = String()
+        do
+        {
+            let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Users")
+            let context = Util.getContext()
+            let results = try context.fetch(request)
+
+            //UsernameLabel.text = "asdasd"
+ 
+            for items in results as! [NSManagedObject]
+                {
+                    usrName = (items.value (forKey: "username") as! String)
+                }
+        }
+        catch
+        {
+            print("Error - LoginViewController - viewDidLoad")
+        }
+        return usrName
+    }
+ 
+ 
+ 
 }

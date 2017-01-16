@@ -20,7 +20,6 @@ class RegisterViewController: UIViewController
     @IBOutlet weak var Password2TextField: UITextField!
 
     
-    
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -100,7 +99,6 @@ class RegisterViewController: UIViewController
         
         /*
         //print all saved data to console
-        //kell ez ide egyáltalán??
         do
         {
             let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Users")

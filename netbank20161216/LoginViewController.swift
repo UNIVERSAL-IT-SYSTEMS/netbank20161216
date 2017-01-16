@@ -21,24 +21,7 @@ class LoginViewController: UIViewController
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "hatter.jpg")!)
         
         // writing {username} label
-//már volt használva egyszer, ki lehet vinni külön is - WelcomeViewController es itt)
-        do
-        {
-            let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Users")
-            let context = Util.getContext()
-            let results = try context.fetch(request)
-            
-            for items in results as! [NSManagedObject]
-            {
-            //    let username = items.value (forKey: "username") as! String
-            //    UsernameLabel.text = username
-                UsernameLabel.text = (items.value (forKey: "username") as! String)
-            }
-        }
-        catch
-        {
-            print("Error - LoginViewController - viewDidLoad")
-        }
+        UsernameLabel.text = Util.scanUsername()
     }
 
     

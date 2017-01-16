@@ -20,25 +20,9 @@ class WelcomeViewController: UIViewController
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "hatter.jpg")!)
 
         //writing {username} label
-        do
-        {
-            let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Users")
-            let context = Util.getContext()
-            let results = try context.fetch(request)
-        
-            for items in results as! [NSManagedObject]
-            {
-                let username = items.value (forKey: "username") as! String
-                UsernameLabel.text = username
-            }
-        }
-        catch
-        {
-            print("Error - WelcomeViewController - viewDidLoad")
-        }
+        UsernameLabel.text = Util.scanUsername()
     }
-    
-    
+
     
     
     @IBAction func LogoutButton(_ sender: Any) {

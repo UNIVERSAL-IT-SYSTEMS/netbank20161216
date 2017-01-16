@@ -88,12 +88,12 @@
 				2178B0B71E043716003E970E /* netbank20161216.xcdatamodeld */,
 				2178B0C71E043779003E970E /* hatter.jpg */,
 				21045E961E0AD03D00E926E7 /* CommonCryptoHeader.h */,
-				2158586C1E07D2690022CA93 /* Story - 1.md */,
 				2178B0BF1E043716003E970E /* Info.plist */,
 				2178B0BA1E043716003E970E /* Assets.xcassets */,
 				2178B0B01E043716003E970E /* AppDelegate.swift */,
 				2178B0BC1E043716003E970E /* LaunchScreen.storyboard */,
 				2178B0CB1E043E76003E970E /* BackgroundExtension.swift */,
+				2158586C1E07D2690022CA93 /* Story - 1.md */,
 			);
 			path = netbank20161216;
 			sourceTree = "<group>";
