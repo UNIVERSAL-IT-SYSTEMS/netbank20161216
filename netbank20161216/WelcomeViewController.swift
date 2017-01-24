@@ -24,20 +24,11 @@ class WelcomeViewController: UIViewController
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "hatter.jpg")!)
        
-        self.printline()
-                //writing {username} label
+        //writing {username} label
         UsernameLabel.text = Util.scanUsername()
         
         
     }
-    
-    func printline()
-    {
-        print ("print on open")
-    }
-
-    
-
 
     @IBAction func menuButton(_ sender: Any) {
         let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MenuPopUp") as! MenuPopUpViewController

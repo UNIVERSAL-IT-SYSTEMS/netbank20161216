@@ -16,7 +16,6 @@ class AddEmployeeViewController: UIViewController, UINavigationControllerDelegat
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var addressTextField: UITextField!
     @IBOutlet weak var departmentTextField: UITextField!
-    @IBOutlet weak var profilepicTextField: UITextField!
     
     
     
@@ -78,15 +77,12 @@ class AddEmployeeViewController: UIViewController, UINavigationControllerDelegat
             imageOutlet.image = pickedImage
             imageData = (UIImageJPEGRepresentation(pickedImage, 1.0) as NSData?)!
             
-           // let imageData: NSData = UIImagePNGRepresentation(imData)
+            //let imageData: NSData = UIImagePNGRepresentation(imData)
             //imageData = UIImagePNGRepresentation(pickedImage)
-
-
             print("image picked")
         }
         dismiss(animated: true, completion: nil)
     }
-    
     
     
     
@@ -104,7 +100,6 @@ class AddEmployeeViewController: UIViewController, UINavigationControllerDelegat
         transc.setValue(nameTextField.text, forKey: "name")
         transc.setValue(addressTextField.text, forKey: "address")
         transc.setValue(departmentTextField.text, forKey: "department")
-        transc.setValue("", forKey: "profilepic")
         transc.setValue(imageData, forKey: "profilepicture")
     
         if (imageData == nil)
@@ -167,9 +162,9 @@ class AddEmployeeViewController: UIViewController, UINavigationControllerDelegat
                     let name = items.value (forKey: "name")
                     let address = items.value (forKey: "address")
                     let department = items.value (forKey: "department")
-                    let profilepic = items.value (forKey: "profilepic")
+                    //profilepic
                     
-                    print("Name: ", name!, "Address: ", address!, "Department: ", department!, "Profilepic: ", profilepic!)
+                    print("Name: ", name!, "Address: ", address!, "Department: ", department!)
                 }
             }
         }

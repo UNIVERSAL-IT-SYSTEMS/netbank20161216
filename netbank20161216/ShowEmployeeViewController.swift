@@ -37,7 +37,6 @@ class ShowEmployeeViewController: UIViewController {
             var name = "" as String
             var address = "" as String
             var department = "" as String
-            var profilepic = "" as String
             var imageData : NSData? = nil
             
             if (imageData == nil)
@@ -53,7 +52,6 @@ class ShowEmployeeViewController: UIViewController {
                     name = items.value (forKey: "name") as! String
                     address = items.value (forKey: "address") as! String
                     department = items.value (forKey: "department") as! String
-                    profilepic = items.value (forKey: "profilepic") as! String
                     
                     imageData = items.value(forKeyPath: "profilepicture") as? NSData
                     

@@ -4,7 +4,6 @@
         <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="department" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="profilepic" optional="YES" attributeType="String" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
         <attribute name="profilepicture" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
     </entity>
     <entity name="Users" representedClassName="Users" syncable="YES" codeGenerationType="class">
@@ -14,7 +13,7 @@
         <attribute name="username" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Employee" positionX="-63" positionY="9" width="128" height="120"/>
+        <element name="Employee" positionX="-63" positionY="9" width="128" height="105"/>
         <element name="Users" positionX="-63" positionY="-18" width="128" height="105"/>
     </elements>
 </model>
