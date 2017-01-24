@@ -38,11 +38,9 @@ class FirstOpenViewController: UIViewController
                     }
                     print("Skipping to login")
                     
-                    //opening WelcomeViewController
-                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                    let view = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as UIViewController
-                    let appDelegate = UIApplication.shared.delegate as! AppDelegate
-                    appDelegate.window?.rootViewController = view
+                    //opening LoginViewController
+                    Util.openViewController(DisplayVC: "LoginViewController")
+
                 }
         }
         catch

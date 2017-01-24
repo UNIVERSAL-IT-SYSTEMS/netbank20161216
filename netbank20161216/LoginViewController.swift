@@ -72,7 +72,8 @@ class LoginViewController: UIViewController
     }
 
     
-    @IBAction func DeleteDataButton(_ sender: Any) {
+    @IBAction func DeleteDataButton(_ sender: Any)
+    {
         //alerting user that all data gets deleted
         let alert = UIAlertController(title: "Warning", message: "All user data will be deleted. Are you sure?", preferredStyle: UIAlertControllerStyle.alert)
         alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.default, handler: nil))
@@ -84,9 +85,7 @@ class LoginViewController: UIViewController
                 let request = NSBatchDeleteRequest(fetchRequest: fetch)
                 _ = try Util.getContext().execute(request)
                 
-                let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                let viewController = storyboard.instantiateViewController(withIdentifier :"FirstOpenViewController")
-                self.present(viewController, animated: true)
+                Util.openViewController(DisplayVC: "FirstOpenViewController")
             }
             catch
             {
@@ -95,4 +94,18 @@ class LoginViewController: UIViewController
         }))
         self.present(alert, animated: true, completion: nil)
     }
+    
+
+    
+    
+    
+    
+    @IBAction func showMenu(_ sender: Any)
+    {
+        let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MenuPopUp") as! MenuPopUpViewController
+        self.addChildViewController(popOverVC)
+        self.view.addSubview(popOverVC.view)
+        popOverVC.didMove(toParentViewController: self)
+    }
+    
 }

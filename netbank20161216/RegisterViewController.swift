@@ -122,10 +122,8 @@ class RegisterViewController: UIViewController
          */
         
         //if all done, opening WelcomeViewController
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let viewController = storyboard.instantiateViewController(withIdentifier :"WelcomeViewController")
-        self.present(viewController, animated: true)
-    }
+        Util.openViewController(DisplayVC: "WelcomeViewController")
+          }
 }
 
 

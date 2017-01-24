@@ -7,38 +7,54 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		131EB47A0EB42F758B222DA1 /* Pods_netbank20161216.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 040A0D475E194A6B8553BC7C /* Pods_netbank20161216.framework */; };
 		210CF6DD1E0C07DB0029180F /* Utlilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210CF6DC1E0C07DB0029180F /* Utlilities.swift */; };
+		210D9E7B1E2F6815007BC674 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 210D9E791E2F6815007BC674 /* Main.storyboard */; };
+		210D9E7E1E2F681C007BC674 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 210D9E7C1E2F681C007BC674 /* LaunchScreen.storyboard */; };
 		2158586D1E07D2690022CA93 /* Story - 1.md in Sources */ = {isa = PBXBuildFile; fileRef = 2158586C1E07D2690022CA93 /* Story - 1.md */; };
 		215858701E07DE930022CA93 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2158586F1E07DE930022CA93 /* RegisterViewController.swift */; };
+		215F144A1E37704E001385C4 /* blank-profile-picture.png in Resources */ = {isa = PBXBuildFile; fileRef = 215F14491E37704E001385C4 /* blank-profile-picture.png */; };
+		21762E4A1E32217D00AB9D5C /* AddEmployeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21762E491E32217D00AB9D5C /* AddEmployeeViewController.swift */; };
+		21762E4C1E3221B600AB9D5C /* ShowEmploeeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21762E4B1E3221B600AB9D5C /* ShowEmploeeListViewController.swift */; };
+		21762E4E1E3221C600AB9D5C /* ShowEmployeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21762E4D1E3221C600AB9D5C /* ShowEmployeeViewController.swift */; };
+		21762E501E3230A600AB9D5C /* ShowEmployeeListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21762E4F1E3230A600AB9D5C /* ShowEmployeeListTableViewController.swift */; };
 		2178B0B11E043716003E970E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2178B0B01E043716003E970E /* AppDelegate.swift */; };
 		2178B0B31E043716003E970E /* FirstOpenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2178B0B21E043716003E970E /* FirstOpenViewController.swift */; };
-		2178B0B61E043716003E970E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2178B0B41E043716003E970E /* Main.storyboard */; };
 		2178B0B91E043716003E970E /* netbank20161216.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2178B0B71E043716003E970E /* netbank20161216.xcdatamodeld */; };
 		2178B0BB1E043716003E970E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2178B0BA1E043716003E970E /* Assets.xcassets */; };
-		2178B0BE1E043716003E970E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2178B0BC1E043716003E970E /* LaunchScreen.storyboard */; };
 		2178B0C81E043779003E970E /* hatter.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2178B0C71E043779003E970E /* hatter.jpg */; };
 		2178B0CC1E043E76003E970E /* BackgroundExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2178B0CB1E043E76003E970E /* BackgroundExtension.swift */; };
 		218640D41E093B0800D05A91 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218640D31E093B0800D05A91 /* WelcomeViewController.swift */; };
 		218640D61E0A80B300D05A91 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218640D51E0A80B300D05A91 /* LoginViewController.swift */; };
+		21C94FE31E30F33500762B1A /* MenuPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C94FE21E30F33500762B1A /* MenuPopUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		040A0D475E194A6B8553BC7C /* Pods_netbank20161216.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_netbank20161216.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		21045E961E0AD03D00E926E7 /* CommonCryptoHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CommonCryptoHeader.h; path = ../CommonCryptoHeader.h; sourceTree = "<group>"; };
 		210CF6DC1E0C07DB0029180F /* Utlilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utlilities.swift; sourceTree = "<group>"; };
-		2158586C1E07D2690022CA93 /* Story - 1.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "Story - 1.md"; sourceTree = "<group>"; };
+		210D9E7A1E2F6815007BC674 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		210D9E7D1E2F681C007BC674 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = netbank20161216/Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2158586C1E07D2690022CA93 /* Story - 1.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = "Story - 1.md"; path = "netbank20161216/Story - 1.md"; sourceTree = "<group>"; };
 		2158586F1E07DE930022CA93 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		215F14491E37704E001385C4 /* blank-profile-picture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blank-profile-picture.png"; sourceTree = "<group>"; };
+		21762E491E32217D00AB9D5C /* AddEmployeeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEmployeeViewController.swift; sourceTree = "<group>"; };
+		21762E4B1E3221B600AB9D5C /* ShowEmploeeListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowEmploeeListViewController.swift; sourceTree = "<group>"; };
+		21762E4D1E3221C600AB9D5C /* ShowEmployeeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowEmployeeViewController.swift; sourceTree = "<group>"; };
+		21762E4F1E3230A600AB9D5C /* ShowEmployeeListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowEmployeeListTableViewController.swift; sourceTree = "<group>"; };
 		2178B0AD1E043716003E970E /* netbank20161216.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = netbank20161216.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2178B0B01E043716003E970E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2178B0B21E043716003E970E /* FirstOpenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstOpenViewController.swift; sourceTree = "<group>"; };
-		2178B0B51E043716003E970E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2178B0B81E043716003E970E /* netbank20161216.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = netbank20161216.xcdatamodel; sourceTree = "<group>"; };
 		2178B0BA1E043716003E970E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2178B0BD1E043716003E970E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2178B0BF1E043716003E970E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2178B0C71E043779003E970E /* hatter.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = hatter.jpg; path = ../../hatter.jpg; sourceTree = "<group>"; };
 		2178B0CB1E043E76003E970E /* BackgroundExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundExtension.swift; sourceTree = "<group>"; };
 		218640D31E093B0800D05A91 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		218640D51E0A80B300D05A91 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		21C94FE21E30F33500762B1A /* MenuPopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuPopUpViewController.swift; sourceTree = "<group>"; };
+		2C47215512F89E26D215E267 /* Pods-netbank20161216.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-netbank20161216.release.xcconfig"; path = "Pods/Target Support Files/Pods-netbank20161216/Pods-netbank20161216.release.xcconfig"; sourceTree = "<group>"; };
+		40F31735BCB7FCBE0FC29634 /* Pods-netbank20161216.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-netbank20161216.debug.xcconfig"; path = "Pods/Target Support Files/Pods-netbank20161216/Pods-netbank20161216.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				131EB47A0EB42F758B222DA1 /* Pods_netbank20161216.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,19 +72,44 @@
 		2158586E1E07DE4F0022CA93 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				2178B0B21E043716003E970E /* FirstOpenViewController.swift */,
-				2158586F1E07DE930022CA93 /* RegisterViewController.swift */,
-				218640D31E093B0800D05A91 /* WelcomeViewController.swift */,
-				218640D51E0A80B300D05A91 /* LoginViewController.swift */,
+				21762E511E3230B700AB9D5C /* login+menu */,
+				21762E521E3230C400AB9D5C /* employee */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		21762E511E3230B700AB9D5C /* login+menu */ = {
+			isa = PBXGroup;
+			children = (
+				2178B0B21E043716003E970E /* FirstOpenViewController.swift */,
+				218640D31E093B0800D05A91 /* WelcomeViewController.swift */,
+				2158586F1E07DE930022CA93 /* RegisterViewController.swift */,
+				218640D51E0A80B300D05A91 /* LoginViewController.swift */,
+				21C94FE21E30F33500762B1A /* MenuPopUpViewController.swift */,
+			);
+			name = "login+menu";
+			sourceTree = "<group>";
+		};
+		21762E521E3230C400AB9D5C /* employee */ = {
+			isa = PBXGroup;
+			children = (
+				21762E491E32217D00AB9D5C /* AddEmployeeViewController.swift */,
+				21762E4B1E3221B600AB9D5C /* ShowEmploeeListViewController.swift */,
+				21762E4F1E3230A600AB9D5C /* ShowEmployeeListTableViewController.swift */,
+				21762E4D1E3221C600AB9D5C /* ShowEmployeeViewController.swift */,
+			);
+			name = employee;
 			sourceTree = "<group>";
 		};
 		2178B0A41E043716003E970E = {
 			isa = PBXGroup;
 			children = (
+				2158586C1E07D2690022CA93 /* Story - 1.md */,
 				2178B0AF1E043716003E970E /* netbank20161216 */,
+				210D9E7C1E2F681C007BC674 /* LaunchScreen.storyboard */,
 				2178B0AE1E043716003E970E /* Products */,
+				D9C4144FC39EFC9768399BEA /* Pods */,
+				3DAB1F7085C775CDDB26F157 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,19 +125,35 @@
 			isa = PBXGroup;
 			children = (
 				2158586E1E07DE4F0022CA93 /* ViewControllers */,
+				210D9E791E2F6815007BC674 /* Main.storyboard */,
 				210CF6DC1E0C07DB0029180F /* Utlilities.swift */,
-				2178B0B41E043716003E970E /* Main.storyboard */,
 				2178B0B71E043716003E970E /* netbank20161216.xcdatamodeld */,
+				215F14491E37704E001385C4 /* blank-profile-picture.png */,
 				2178B0C71E043779003E970E /* hatter.jpg */,
 				21045E961E0AD03D00E926E7 /* CommonCryptoHeader.h */,
 				2178B0BF1E043716003E970E /* Info.plist */,
 				2178B0BA1E043716003E970E /* Assets.xcassets */,
 				2178B0B01E043716003E970E /* AppDelegate.swift */,
-				2178B0BC1E043716003E970E /* LaunchScreen.storyboard */,
 				2178B0CB1E043E76003E970E /* BackgroundExtension.swift */,
-				2158586C1E07D2690022CA93 /* Story - 1.md */,
 			);
 			path = netbank20161216;
+			sourceTree = "<group>";
+		};
+		3DAB1F7085C775CDDB26F157 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				040A0D475E194A6B8553BC7C /* Pods_netbank20161216.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D9C4144FC39EFC9768399BEA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				40F31735BCB7FCBE0FC29634 /* Pods-netbank20161216.debug.xcconfig */,
+				2C47215512F89E26D215E267 /* Pods-netbank20161216.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -105,9 +163,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2178B0C21E043716003E970E /* Build configuration list for PBXNativeTarget "netbank20161216" */;
 			buildPhases = (
+				841DDD9B2068754FDA4311E2 /* [CP] Check Pods Manifest.lock */,
 				2178B0A91E043716003E970E /* Sources */,
 				2178B0AA1E043716003E970E /* Frameworks */,
 				2178B0AB1E043716003E970E /* Resources */,
+				EFD0CF6E962E0AB9CDE50202 /* [CP] Embed Pods Frameworks */,
+				4EFBD66AA2810E41744E0144 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,6 +187,8 @@
 			attributes = {
 				KnownAssetTags = (
 					WelcomeViewController,
+					dsc,
+					jknkj,
 				);
 				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
@@ -133,7 +196,16 @@
 				TargetAttributes = {
 					2178B0AC1E043716003E970E = {
 						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = D26A47S36U;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+							com.apple.DataProtection = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -160,14 +232,63 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2178B0BE1E043716003E970E /* LaunchScreen.storyboard in Resources */,
+				210D9E7B1E2F6815007BC674 /* Main.storyboard in Resources */,
+				210D9E7E1E2F681C007BC674 /* LaunchScreen.storyboard in Resources */,
 				2178B0C81E043779003E970E /* hatter.jpg in Resources */,
 				2178B0BB1E043716003E970E /* Assets.xcassets in Resources */,
-				2178B0B61E043716003E970E /* Main.storyboard in Resources */,
+				215F144A1E37704E001385C4 /* blank-profile-picture.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4EFBD66AA2810E41744E0144 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-netbank20161216/Pods-netbank20161216-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		841DDD9B2068754FDA4311E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EFD0CF6E962E0AB9CDE50202 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-netbank20161216/Pods-netbank20161216-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2178B0A91E043716003E970E /* Sources */ = {
@@ -178,29 +299,34 @@
 				2178B0B31E043716003E970E /* FirstOpenViewController.swift in Sources */,
 				2178B0B91E043716003E970E /* netbank20161216.xcdatamodeld in Sources */,
 				215858701E07DE930022CA93 /* RegisterViewController.swift in Sources */,
+				21762E4A1E32217D00AB9D5C /* AddEmployeeViewController.swift in Sources */,
 				218640D61E0A80B300D05A91 /* LoginViewController.swift in Sources */,
+				21762E501E3230A600AB9D5C /* ShowEmployeeListTableViewController.swift in Sources */,
+				21C94FE31E30F33500762B1A /* MenuPopUpViewController.swift in Sources */,
 				2178B0B11E043716003E970E /* AppDelegate.swift in Sources */,
 				210CF6DD1E0C07DB0029180F /* Utlilities.swift in Sources */,
+				21762E4C1E3221B600AB9D5C /* ShowEmploeeListViewController.swift in Sources */,
 				2178B0CC1E043E76003E970E /* BackgroundExtension.swift in Sources */,
 				218640D41E093B0800D05A91 /* WelcomeViewController.swift in Sources */,
+				21762E4E1E3221C600AB9D5C /* ShowEmployeeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		2178B0B41E043716003E970E /* Main.storyboard */ = {
+		210D9E791E2F6815007BC674 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2178B0B51E043716003E970E /* Base */,
+				210D9E7A1E2F6815007BC674 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		2178B0BC1E043716003E970E /* LaunchScreen.storyboard */ = {
+		210D9E7C1E2F681C007BC674 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2178B0BD1E043716003E970E /* Base */,
+				210D9E7D1E2F681C007BC674 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -303,9 +429,12 @@
 		};
 		2178B0C31E043716003E970E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40F31735BCB7FCBE0FC29634 /* Pods-netbank20161216.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = D26A47S36U;
 				INFOPLIST_FILE = netbank20161216/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.netbank20161216;
@@ -318,9 +447,12 @@
 		};
 		2178B0C41E043716003E970E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C47215512F89E26D215E267 /* Pods-netbank20161216.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = D26A47S36U;
 				INFOPLIST_FILE = netbank20161216/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.netbank20161216;

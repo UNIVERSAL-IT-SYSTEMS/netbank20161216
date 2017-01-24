@@ -1,0 +1,6 @@
+framework module Pods_netbank20161216 {
+  umbrella header "Pods-netbank20161216-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -8,26 +8,66 @@
 
 import UIKit
 import CoreData
+import SideMenu
+
+
+
 
 class WelcomeViewController: UIViewController
 {
     @IBOutlet weak var UsernameLabel: UILabel!
-
+    
+    
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "hatter.jpg")!)
-
-        //writing {username} label
+       
+        self.printline()
+                //writing {username} label
         UsernameLabel.text = Util.scanUsername()
+        
+        
+    }
+    
+    func printline()
+    {
+        print ("print on open")
     }
 
     
-    
-    @IBAction func LogoutButton(_ sender: Any) {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let viewController = storyboard.instantiateViewController(withIdentifier :"LoginViewController")
-        self.present(viewController, animated: true)
+
+
+    @IBAction func menuButton(_ sender: Any) {
+        let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MenuPopUp") as! MenuPopUpViewController
+        self.addChildViewController(popOverVC)
+        //        popOverVC.view.frame = self.view.frame
+        self.view.addSubview(popOverVC.view)
+        popOverVC.didMove(toParentViewController: self)
     }
+    
 }
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+

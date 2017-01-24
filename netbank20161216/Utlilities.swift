@@ -45,7 +45,6 @@ class Util : UIViewController
             let context = Util.getContext()
             let results = try context.fetch(request)
 
-            //UsernameLabel.text = "asdasd"
  
             for items in results as! [NSManagedObject]
                 {
@@ -58,7 +57,76 @@ class Util : UIViewController
         }
         return usrName
     }
+    
+    
+    
+    class func openViewController(DisplayVC :String)
+    {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let view = storyboard.instantiateViewController(withIdentifier: DisplayVC) as UIViewController
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        appDelegate.window?.rootViewController = view
+        //self.present(viewController, animated: true)
+    }
  
- 
+    
+    
+    
+    
+    
+/*
+    func showAnimate()
+    {
+        self.view.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
+        self.view.alpha = 0.0;
+        UIView.animate(withDuration: 0.25, animations: {
+            self.view.alpha = 1.0
+            self.view.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
+        });
+    }
+    
+    func removeAnimate()
+    {
+        UIView.animate(withDuration: 0.25, animations: {
+            self.view.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
+            self.view.alpha = 0.0;
+        }, completion:{(finished : Bool)  in
+            if (finished)
+            {
+                self.view.removeFromSuperview()
+            }
+        });
+    }
+*/
+    
+    
+/*
+    class func menuButton() -> UIViewController
+    {
+        let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MenuPopUp") as! MenuPopUpViewController
+        self.addChildViewController(popOverVC)
+        popOverVC.view.frame = self.view.frame
+        self.view.addSubview(popOverVC.view)
+        popOverVC.didMove(toParentViewController: self)
+        
+        print("menuButton")
+        return popOverVC
+    }
+     
+     
+     
+     func displayContentController(content: UIViewController)
+     {
+        addChildViewController(content)
+        self.view.addSubview(content.view)
+        content.didMove(toParentViewController: self)
+        print("displayConttentController")
+     }
+ */
+    
+
+    
+    
  
 }
+
