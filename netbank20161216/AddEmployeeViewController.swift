@@ -16,15 +16,20 @@ class AddEmployeeViewController: UIViewController, UINavigationControllerDelegat
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var addressTextField: UITextField!
     @IBOutlet weak var departmentTextField: UITextField!
-    
-    
+
+    @IBOutlet weak var imageOutlet: UIImageView!
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "hatter.jpg")!)
         
-        imageOutlet.image = UIImage (named: "blank-profile-picture.png")
+        imageOutlet.image = UIImage(named: "blank-profile-picture.png")
+        imageOutlet.isUserInteractionEnabled = true
+        let tapSelector : Selector = #selector(AddEmployeeViewController.imageTapped)
+        let tapGesture = UITapGestureRecognizer (target: self, action: tapSelector)
+        tapGesture.numberOfTapsRequired = 1
+        imageOutlet.addGestureRecognizer(tapGesture)
 
         // Do any additional setup after loading the view.
     }
@@ -44,21 +49,24 @@ class AddEmployeeViewController: UIViewController, UINavigationControllerDelegat
     }
 
     
-    
+    func imageTapped()
+    {
+        let pickerController = UIImagePickerController()
+        pickerController.delegate = self
+        pickerController.sourceType = UIImagePickerControllerSourceType.photoLibrary
+           pickerController.allowsEditing = true
+        self.present(pickerController, animated: true, completion: nil)
+    }
     
     
     // MARK: IMAGE
     
-    @IBOutlet weak var imageOutlet: UIImageView!
+
     var imageData : NSData? = nil
     
-    
+
     @IBAction func addImageButton(_ sender: Any) {
-            let pickerController = UIImagePickerController()
-        pickerController.delegate = self
-        pickerController.sourceType = UIImagePickerControllerSourceType.photoLibrary
-     //   pickerController.allowsEditing = true
-        self.present(pickerController, animated: true, completion: nil)
+        imageTapped()
     }
     
 /*
@@ -72,6 +80,7 @@ class AddEmployeeViewController: UIViewController, UINavigationControllerDelegat
 */
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        /*
         if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage
         {
             imageOutlet.image = pickedImage
@@ -81,6 +90,34 @@ class AddEmployeeViewController: UIViewController, UINavigationControllerDelegat
             //imageData = UIImagePNGRepresentation(pickedImage)
             print("image picked")
         }
+        else
+        {
+        print("Something went wrong")
+        }
+ 
+         
+    //2.
+        let pickedImage = info[UIImagePickerControllerOriginalImage] as! UIImage
+        imageOutlet.image = pickedImage
+        imageData = (UIImageJPEGRepresentation(pickedImage, 1.0) as NSData?)!
+        
+        //let imageData: NSData = UIImagePNGRepresentation(imData)
+        //imageData = UIImagePNGRepresentation(pickedImage)
+        print("image picked")
+        */
+            
+        
+        if let pickedImage = info[UIImagePickerControllerEditedImage] as? UIImage {
+            imageOutlet.image = pickedImage
+            imageData = (UIImageJPEGRepresentation(pickedImage, 1.0) as NSData?)!
+        } else if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
+            imageOutlet.image = pickedImage
+            imageData = (UIImageJPEGRepresentation(pickedImage, 1.0) as NSData?)!
+        } else {
+            imageOutlet.image = nil
+            print("Error while choosing image")
+        }
+        
         dismiss(animated: true, completion: nil)
     }
     
@@ -112,6 +149,11 @@ class AddEmployeeViewController: UIViewController, UINavigationControllerDelegat
         {
             try context.save()
             print("Employee saved into CoreData!")
+            
+            let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "welcomeNavigation")
+            present(popOverVC, animated: true, completion: nil)
+            
+            
         }
         catch
         let error as NSError

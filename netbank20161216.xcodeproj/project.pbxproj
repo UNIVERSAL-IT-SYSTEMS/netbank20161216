@@ -11,9 +11,9 @@
 		210CF6DD1E0C07DB0029180F /* Utlilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210CF6DC1E0C07DB0029180F /* Utlilities.swift */; };
 		210D9E7B1E2F6815007BC674 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 210D9E791E2F6815007BC674 /* Main.storyboard */; };
 		210D9E7E1E2F681C007BC674 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 210D9E7C1E2F681C007BC674 /* LaunchScreen.storyboard */; };
+		2140F86A1E37A9F600B73BE5 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2140F8691E37A9F600B73BE5 /* MenuTableViewController.swift */; };
 		2158586D1E07D2690022CA93 /* Story - 1.md in Sources */ = {isa = PBXBuildFile; fileRef = 2158586C1E07D2690022CA93 /* Story - 1.md */; };
 		215858701E07DE930022CA93 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2158586F1E07DE930022CA93 /* RegisterViewController.swift */; };
-		215F144A1E37704E001385C4 /* blank-profile-picture.png in Resources */ = {isa = PBXBuildFile; fileRef = 215F14491E37704E001385C4 /* blank-profile-picture.png */; };
 		21762E4A1E32217D00AB9D5C /* AddEmployeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21762E491E32217D00AB9D5C /* AddEmployeeViewController.swift */; };
 		21762E4C1E3221B600AB9D5C /* ShowEmploeeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21762E4B1E3221B600AB9D5C /* ShowEmploeeListViewController.swift */; };
 		21762E4E1E3221C600AB9D5C /* ShowEmployeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21762E4D1E3221C600AB9D5C /* ShowEmployeeViewController.swift */; };
@@ -24,6 +24,7 @@
 		2178B0BB1E043716003E970E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2178B0BA1E043716003E970E /* Assets.xcassets */; };
 		2178B0C81E043779003E970E /* hatter.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2178B0C71E043779003E970E /* hatter.jpg */; };
 		2178B0CC1E043E76003E970E /* BackgroundExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2178B0CB1E043E76003E970E /* BackgroundExtension.swift */; };
+		2182867D1E3F7D2C00F44B42 /* blank-profile-picture.png in Resources */ = {isa = PBXBuildFile; fileRef = 2182867C1E3F7D2C00F44B42 /* blank-profile-picture.png */; };
 		218640D41E093B0800D05A91 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218640D31E093B0800D05A91 /* WelcomeViewController.swift */; };
 		218640D61E0A80B300D05A91 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218640D51E0A80B300D05A91 /* LoginViewController.swift */; };
 		21C94FE31E30F33500762B1A /* MenuPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C94FE21E30F33500762B1A /* MenuPopUpViewController.swift */; };
@@ -35,9 +36,9 @@
 		210CF6DC1E0C07DB0029180F /* Utlilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utlilities.swift; sourceTree = "<group>"; };
 		210D9E7A1E2F6815007BC674 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		210D9E7D1E2F681C007BC674 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = netbank20161216/Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2140F8691E37A9F600B73BE5 /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		2158586C1E07D2690022CA93 /* Story - 1.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = "Story - 1.md"; path = "netbank20161216/Story - 1.md"; sourceTree = "<group>"; };
 		2158586F1E07DE930022CA93 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
-		215F14491E37704E001385C4 /* blank-profile-picture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blank-profile-picture.png"; sourceTree = "<group>"; };
 		21762E491E32217D00AB9D5C /* AddEmployeeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEmployeeViewController.swift; sourceTree = "<group>"; };
 		21762E4B1E3221B600AB9D5C /* ShowEmploeeListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowEmploeeListViewController.swift; sourceTree = "<group>"; };
 		21762E4D1E3221C600AB9D5C /* ShowEmployeeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowEmployeeViewController.swift; sourceTree = "<group>"; };
@@ -50,6 +51,7 @@
 		2178B0BF1E043716003E970E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2178B0C71E043779003E970E /* hatter.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = hatter.jpg; path = ../../hatter.jpg; sourceTree = "<group>"; };
 		2178B0CB1E043E76003E970E /* BackgroundExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundExtension.swift; sourceTree = "<group>"; };
+		2182867C1E3F7D2C00F44B42 /* blank-profile-picture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blank-profile-picture.png"; sourceTree = "<group>"; };
 		218640D31E093B0800D05A91 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		218640D51E0A80B300D05A91 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		21C94FE21E30F33500762B1A /* MenuPopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuPopUpViewController.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 				218640D31E093B0800D05A91 /* WelcomeViewController.swift */,
 				2158586F1E07DE930022CA93 /* RegisterViewController.swift */,
 				218640D51E0A80B300D05A91 /* LoginViewController.swift */,
+				2140F8691E37A9F600B73BE5 /* MenuTableViewController.swift */,
 				21C94FE21E30F33500762B1A /* MenuPopUpViewController.swift */,
 			);
 			name = "login+menu";
@@ -128,7 +131,7 @@
 				210D9E791E2F6815007BC674 /* Main.storyboard */,
 				210CF6DC1E0C07DB0029180F /* Utlilities.swift */,
 				2178B0B71E043716003E970E /* netbank20161216.xcdatamodeld */,
-				215F14491E37704E001385C4 /* blank-profile-picture.png */,
+				2182867C1E3F7D2C00F44B42 /* blank-profile-picture.png */,
 				2178B0C71E043779003E970E /* hatter.jpg */,
 				21045E961E0AD03D00E926E7 /* CommonCryptoHeader.h */,
 				2178B0BF1E043716003E970E /* Info.plist */,
@@ -236,7 +239,7 @@
 				210D9E7E1E2F681C007BC674 /* LaunchScreen.storyboard in Resources */,
 				2178B0C81E043779003E970E /* hatter.jpg in Resources */,
 				2178B0BB1E043716003E970E /* Assets.xcassets in Resources */,
-				215F144A1E37704E001385C4 /* blank-profile-picture.png in Resources */,
+				2182867D1E3F7D2C00F44B42 /* blank-profile-picture.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +300,7 @@
 			files = (
 				2158586D1E07D2690022CA93 /* Story - 1.md in Sources */,
 				2178B0B31E043716003E970E /* FirstOpenViewController.swift in Sources */,
+				2140F86A1E37A9F600B73BE5 /* MenuTableViewController.swift in Sources */,
 				2178B0B91E043716003E970E /* netbank20161216.xcdatamodeld in Sources */,
 				215858701E07DE930022CA93 /* RegisterViewController.swift in Sources */,
 				21762E4A1E32217D00AB9D5C /* AddEmployeeViewController.swift in Sources */,

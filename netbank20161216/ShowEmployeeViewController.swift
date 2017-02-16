@@ -12,14 +12,13 @@ import CoreData
 
 class ShowEmployeeViewController: UIViewController {
     
-    
-    //textfield outlets
+    //VC outlets
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet weak var addressLabel: UILabel!
     @IBOutlet weak var departmentLabel: UILabel!
-    
-    
     @IBOutlet weak var profilepicOutlet: UIImageView!
+
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,11 +37,6 @@ class ShowEmployeeViewController: UIViewController {
             var address = "" as String
             var department = "" as String
             var imageData : NSData? = nil
-            
-            if (imageData == nil)
-            {
-                print("imageData after inicialization is 'nil'")
-            }
             
             for items in results as! [NSManagedObject]
             {
@@ -95,6 +89,11 @@ class ShowEmployeeViewController: UIViewController {
         popOverVC.didMove(toParentViewController: self)
     }
 
+
+    @IBAction func homeButton(_ sender: Any) {
+        present ((UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "welcomeNavigation")), animated: true, completion: nil)
+    }
+    
     
 
 }

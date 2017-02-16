@@ -28,7 +28,8 @@ class MenuPopUpViewController: UIViewController {
 
     @IBAction func WelcomeScreenButton(_ sender: Any) {
         self.view.removeFromSuperview()
-        Util.openViewController(DisplayVC: "WelcomeViewController")
+       // Util.openViewController(DisplayVC: "WelcomeViewController")
+        Util.openViewController(DisplayVC: "welcomeNavigation")
     }
 
     @IBAction func AddEmployeeButton(_ sender: Any) {

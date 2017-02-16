@@ -50,10 +50,13 @@ class LoginViewController: UIViewController
                 let shaHex =  shaData!.map { String(format: "%02hhx", $0) }.joined()
                 print("pass in sha256: \(shaHex)")
                 
+                print ("Password (typed): \(pass)")
+                print("Password (saved): \(shaHex)")
+                
                 if  (pass == shaHex)
                 {
                     let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                    let viewController = storyboard.instantiateViewController(withIdentifier :"WelcomeViewController")
+                    let viewController = storyboard.instantiateViewController(withIdentifier :"welcomeNavigation")
                     self.present(viewController, animated: true)
                 }
                 else
@@ -102,10 +105,8 @@ class LoginViewController: UIViewController
     
     @IBAction func showMenu(_ sender: Any)
     {
-        let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MenuPopUp") as! MenuPopUpViewController
-        self.addChildViewController(popOverVC)
-        self.view.addSubview(popOverVC.view)
-        popOverVC.didMove(toParentViewController: self)
+        let welcomeVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "welcomeNavigation")
+        present(welcomeVC, animated: true, completion: nil)
     }
     
 }
